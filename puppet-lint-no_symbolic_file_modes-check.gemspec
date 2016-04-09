@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name        = 'puppet-lint-no_symbolic_file_modes-check'
-  spec.version     = '1.0.0'
+  spec.version     = '1.0.1'
   spec.homepage    = 'https://github.com/deanwilson/puppet-lint-no_symbolic_file_modes-check'
   spec.license     = 'MIT'
   spec.author      = 'Dean Wilson'
@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.summary     = 'puppet-lint no_symbolic_file_modes check'
   spec.description = <<-EOF
     Extends puppet-lint to ensure all file resource modes are defined as octal
-    values and not symbolic ones. 
+    values and not symbolic ones.
   EOF
 
   spec.add_dependency             'puppet-lint', '~> 1.1'
