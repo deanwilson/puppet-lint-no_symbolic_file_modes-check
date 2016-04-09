@@ -1,6 +1,6 @@
 PuppetLint.new_check(:no_symbolic_file_modes) do
 
-  IGNORE_TYPES = Set[:VARIABLE, :UNDEF]
+  NO_SYMBOLIC_FILE_MODES_IGNORE_TYPES = Set[:VARIABLE, :UNDEF]
   WARNING = 'mode should be a 4 digit octal value, not a symbolic mode'
 
   def check
@@ -11,7 +11,7 @@ PuppetLint.new_check(:no_symbolic_file_modes) do
         }.each do |param_token|
           value_token = param_token.next_code_token.next_code_token
 
-          break if IGNORE_TYPES.include?(value_token.type)
+          break if NO_SYMBOLIC_FILE_MODES_IGNORE_TYPES.include?(value_token.type)
           break if value_token.value =~ /^[0-7]{4}$/
 
           notify :warning, {
