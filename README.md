@@ -41,3 +41,12 @@ This plugin provides a new check to `puppet-lint`.
 
 The code for this was heavily borrowed/stolen from the original,
 including in puppet-lint, file mode check written by @rodjek
+
+## Other puppet-lint plugins
+
+You can find a list of my `puppet-lint` plugins in the
+[unixdaemon puppet-lint-plugins](https://github.com/deanwilson/unixdaemon-puppet-lint-plugins) repo.
+
+### Author
+
+[Dean Wilson](http://www.unixdaemon.net)
