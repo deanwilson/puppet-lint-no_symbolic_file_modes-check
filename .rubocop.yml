@@ -1,3 +1,6 @@
+AllCops:
+  NewCops: enable
+
 Style/FrozenStringLiteralComment:
   Enabled: false
 
@@ -12,3 +15,7 @@ Metrics/MethodLength:
 
 Metrics/AbcSize:
   Max: 30
+
+# TODO: not found in 0.86 version of rubocop
+#Style/AlignHash:
+#  EnforcedColonStyle: table
