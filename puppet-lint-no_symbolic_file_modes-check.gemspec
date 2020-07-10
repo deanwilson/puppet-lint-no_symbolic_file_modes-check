@@ -19,11 +19,11 @@ Gem::Specification.new do |spec|
   END_OF_DESCRIPTION
 
   spec.add_dependency             'puppet-lint', '>= 1.1', '< 3.0'
-  spec.add_development_dependency 'rake', '~> 11.2.0'
-  spec.add_development_dependency 'rspec', '~> 3.8.0'
+  spec.add_development_dependency 'rake', '~> 13.0.0'
+  spec.add_development_dependency 'rspec', '~> 3.9.0'
   spec.add_development_dependency 'rspec-collection_matchers', '~> 1.0'
   spec.add_development_dependency 'rspec-its', '~> 1.0'
-  spec.add_development_dependency 'rspec-json_expectations', '~> 1.4'
-  spec.add_development_dependency 'rubocop', '~> 0.75.0'
-  spec.add_development_dependency 'simplecov', '~> 0.17.1'
+  spec.add_development_dependency 'rspec-json_expectations', '~> 2.2'
+  spec.add_development_dependency 'rubocop', '~> 0.86.0'
+  spec.add_development_dependency 'simplecov', '~> 0.18.0'
 end
