@@ -1,3 +1,6 @@
+require:
+  - rubocop-rspec
+
 AllCops:
   NewCops: enable
 
@@ -16,6 +19,8 @@ Metrics/MethodLength:
 Metrics/AbcSize:
   Max: 30
 
-# TODO: not found in 0.86 version of rubocop
-#Style/AlignHash:
-#  EnforcedColonStyle: table
+RSpec/DescribeClass:
+  Enabled: false
+
+Layout/HashAlignment:
+  EnforcedColonStyle: table
