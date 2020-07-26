@@ -16,9 +16,9 @@ PuppetLint.new_check(:no_symbolic_file_modes) do
 
         notify :warning, {
           message: WARNING,
-          line: value_token.line,
-          column: value_token.column,
-          token: value_token,
+          line:    value_token.line,
+          column:  value_token.column,
+          token:   value_token,
         }
       end
     end

@@ -22,6 +22,5 @@ Metrics/AbcSize:
 RSpec/DescribeClass:
   Enabled: false
 
-# TODO: not found in 0.86 version of rubocop
-#Style/AlignHash:
-#  EnforcedColonStyle: table
+Layout/HashAlignment:
+  EnforcedColonStyle: table
