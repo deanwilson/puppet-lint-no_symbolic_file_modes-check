@@ -35,6 +35,24 @@ describe 'no_symbolic_file_modes' do
     end
   end
 
+  context 'when file mode is specified in a variable' do
+    let(:code) do
+      <<-TEST_CLASS
+        class octal_file_mode {
+          $mode = 'ug=rw,o=rx'
+
+          file { '/tmp/octal-mode':
+            mode => $mode,
+          }
+        }
+      TEST_CLASS
+    end
+
+    it 'does not detect any problems' do
+      expect(problems).to have(0).problems
+    end
+  end
+
   context 'when file has a symbolic mode' do
     let(:code) do
       <<-TEST_CLASS
