@@ -1,7 +1,7 @@
-PuppetLint.new_check(:no_symbolic_file_modes) do
-  NO_SYMBOLIC_FILE_MODES_IGNORE_TYPES = Set[:VARIABLE, :UNDEF].freeze
-  WARNING = 'mode should be a 4 digit octal value, not a symbolic mode'.freeze
+NO_SYMBOLIC_FILE_MODES_IGNORE_TYPES = Set[:VARIABLE, :UNDEF].freeze
+WARNING = 'mode should be a 4 digit octal value, not a symbolic mode'.freeze
 
+PuppetLint.new_check(:no_symbolic_file_modes) do
   def check
     resource_indexes.each do |resource|
       next unless resource[:type].value == 'file'
