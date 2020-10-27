@@ -1,5 +1,7 @@
 # puppet-lint no symbolic file modes check
 
+[![Actions Status](https://github.com/deanwilson/puppet-lint-no_symbolic_file_modes-check/workflows/Ruby/badge.svg)](https://github.com/deanwilson/puppet-lint-no_symbolic_file_modes-check/actions)
+
 Extends puppet-lint to ensure all file resource modes are defined as octal
 values and not symbolic ones.
 
