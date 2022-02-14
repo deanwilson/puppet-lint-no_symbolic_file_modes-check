@@ -12,7 +12,7 @@ Style/TrailingCommaInHashLiteral:
 
 Metrics/BlockLength:
   Max: 35
-  ExcludedMethods: [ 'describe' ]
+  IgnoredMethods: [ 'describe' ]
 
 Metrics/MethodLength:
   Max: 25
