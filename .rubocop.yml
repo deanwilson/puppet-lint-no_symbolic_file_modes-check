@@ -1,4 +1,5 @@
 require:
+  - rubocop-rake
   - rubocop-rspec
 
 AllCops:
@@ -12,7 +13,6 @@ Style/TrailingCommaInHashLiteral:
 
 Metrics/BlockLength:
   Max: 35
-  IgnoredMethods: [ 'describe' ]
 
 Metrics/MethodLength:
   Max: 25
